@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit{
     Swal.fire({
       title: 'Espere por favor',
       didOpen: () => {
-        Swal.showLoading(null)
+        Swal.showLoading()
       }
     })
     this.authService.logout().then(()=>{
